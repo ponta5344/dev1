@@ -1,0 +1,4 @@
+# binディレクトリ除外
+TEST/bin/
+TEST/log/*.log
+
