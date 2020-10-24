@@ -1,4 +1,3 @@
 # binディレクトリ除外
-TEST/bin/
-TEST/log/
-
+**/bin/
+**/log/
