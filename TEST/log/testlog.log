@@ -1,0 +1,13 @@
+2020/10/24 09:03:39.942 [main] TRACE  ponta.test.PontaTest ■ Message test start.
+2020/10/24 09:03:39.958 [main] TRACE  ponta.test.PontaTest ■ Message test end.
+2020/10/24 09:03:39.958 [main] TRACE  ponta.test.PontaTest ■ Oracle test start.
+2020/10/24 09:03:41.292 [main] TRACE  ponta.test.PontaTest ■ Oracle test end.
+2020/10/24 09:03:41.293 [main] TRACE  ponta.test.PontaTest ■ End PontaTest.
+2020/10/24 20:31:03.510 [main] TRACE  ponta.test.PontaTest ■ Start PontaTest.
+2020/10/24 20:31:03.519 [main] TRACE  ponta.test.PontaTest ■ String split test start.
+2020/10/24 20:31:03.548 [main] TRACE  ponta.test.PontaTest ■ String split test end.
+2020/10/24 20:31:03.548 [main] TRACE  ponta.test.PontaTest ■ Message test start.
+2020/10/24 20:31:03.552 [main] TRACE  ponta.test.PontaTest ■ Message test end.
+2020/10/24 20:31:03.553 [main] TRACE  ponta.test.PontaTest ■ Oracle test start.
+2020/10/24 20:31:04.819 [main] TRACE  ponta.test.PontaTest ■ Oracle test end.
+2020/10/24 20:31:04.820 [main] TRACE  ponta.test.PontaTest ■ End PontaTest.

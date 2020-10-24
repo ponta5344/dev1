@@ -1,0 +1,17 @@
+2020/10/18 21:21:55.988 [main] INFO   ponta.test.Test info=1
+2020/10/18 21:21:55.988 [main] WARN   ponta.test.Test warn=1,=2
+2020/10/18 21:21:55.988 [main] ERROR  ponta.test.Test error=null
+2020/10/18 21:21:55.988 [main] TRACE  ponta.test.Test End
+2020/10/18 21:30:16.228 [main] TRACE  ponta.test.Test Start
+2020/10/18 21:30:16.232 [main] DEBUG  ponta.test.Test debug
+2020/10/18 21:30:16.233 [main] INFO   ponta.test.Test info=1
+2020/10/18 21:30:16.234 [main] WARN   ponta.test.Test warn=1,=2
+2020/10/18 21:30:16.234 [main] ERROR  ponta.test.Test error=null
+2020/10/18 21:30:16.234 [main] TRACE  ponta.test.Test End
+2020/10/18 21:33:27.584 [main] TRACE  ponta.test.Test Start
+2020/10/18 21:33:27.588 [main] DEBUG  ponta.test.Test debug
+2020/10/18 21:33:27.593 [main] INFO   ponta.test.Test info=1
+2020/10/18 21:33:27.593 [main] WARN   ponta.test.Test warn=1,=2
+2020/10/18 21:33:27.593 [main] ERROR  ponta.test.Test error=null
+2020/10/18 21:33:27.594 [main] TRACE  ponta.test.Test End
+2020/10/18 21:36:19.351 [main] TRACE  ponta.test.Test Start
