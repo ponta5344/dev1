@@ -1,3 +1,4 @@
 # binディレクトリ除外
 **/bin/
 **/log/
+**/.DS_Store
