@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import ponta.test.message.Message;
 import ponta.test.message.MessageEnum;
+import ponta.test.util.MessageUtil;
 import ponta.test.util.PontaMessage;
 import ponta.test.util.StringUtil;
 
@@ -30,7 +32,7 @@ public class Test {
 		System.out.println("item3 : " + item3);
 	}
 
-	public void testMessage() {
+	public void testMessageEnum() {
 		for (MessageEnum msgEnum : MessageEnum.values()) {
 			if (msgEnum.name().equals("BE1221")) {
 				System.out.println(msgEnum.ordinal() + ":" + msgEnum.name() + "," + msgEnum.getValue());
@@ -42,6 +44,12 @@ public class Test {
 		paramList.add("TEST1");
 		paramList.add("テスト２");
 		System.out.println(" " + pontaMsg.getMessage("BE1221", paramList));
+
+	}
+	
+	public void testMessage() {
+        String test = MessageUtil.getMessage(Message.M0001, "test");
+        System.out.println(test);
 
 	}
 
