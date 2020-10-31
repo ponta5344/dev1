@@ -72,4 +72,52 @@ public class StringUtil {
 		String formatedString = java.text.MessageFormat.format(query, arguments);
 		return formatedString;
 	}
+
+	/**
+	 *
+	 * @param value
+	 * @return
+	 */
+	public static String trim(String value) {
+		String retstr = value;
+		if (PontaUtil.isEmpty(value)) {
+			return retstr;
+		}
+
+		retstr.replaceFirst("^[\\h]+", "").replaceFirst("[\\h]+$", "");
+
+		return retstr;
+	}
+
+	/**
+	 *
+	 * @param value
+	 * @return
+	 */
+	public static String ltrim(String value) {
+		String retstr = value;
+		if (PontaUtil.isEmpty(value)) {
+			return retstr;
+		}
+
+		retstr.replaceFirst("^[\\h]+", "");
+
+		return retstr;
+	}
+
+	/**
+	 *
+	 * @param value
+	 * @return
+	 */
+	public static String rtrim(String value) {
+		String retstr = value;
+		if (PontaUtil.isEmpty(value)) {
+			return retstr;
+		}
+
+		retstr.replaceFirst("[\\h]+$", "");
+
+		return retstr;
+	}
 }
