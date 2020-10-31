@@ -74,7 +74,8 @@ public class StringUtil {
 	}
 
 	/**
-	 *
+	 * 空白（全角、半角）除去
+	 * 
 	 * @param value
 	 * @return
 	 */
@@ -84,12 +85,11 @@ public class StringUtil {
 			return retstr;
 		}
 
-		retstr.replaceFirst("^[\\h]+", "").replaceFirst("[\\h]+$", "");
-
-		return retstr;
+		return retstr.replaceFirst("^[\\h]+", "").replaceFirst("[\\h]+$", "");
 	}
 
 	/**
+	 * 左空白（全角、半角）除去
 	 *
 	 * @param value
 	 * @return
@@ -100,12 +100,11 @@ public class StringUtil {
 			return retstr;
 		}
 
-		retstr.replaceFirst("^[\\h]+", "");
-
-		return retstr;
+		return retstr.replaceFirst("^[\\h]+", "");
 	}
 
 	/**
+	 * 右空白（全角、半角）除去
 	 *
 	 * @param value
 	 * @return
@@ -116,8 +115,6 @@ public class StringUtil {
 			return retstr;
 		}
 
-		retstr.replaceFirst("[\\h]+$", "");
-
-		return retstr;
+		return retstr.replaceFirst("[\\h]+$", "");
 	}
 }

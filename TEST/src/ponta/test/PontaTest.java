@@ -36,6 +36,12 @@ public class PontaTest {
 
 		System.out.println();
 
+		logger.trace("■ StringUtil test start.");
+		t.testStringUtil();
+		logger.trace("■ StringUtil test end.");
+
+		System.out.println();
+
 		try {
 			logger.trace("■ Oracle test start.");
 			t.testOracle();
@@ -47,6 +53,8 @@ public class PontaTest {
 			System.out.println();
 
 			logger.trace("■■■ End PontaTest.");
+
+			logger.trace("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 		}
 
 	}

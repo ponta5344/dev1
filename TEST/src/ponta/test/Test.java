@@ -71,6 +71,42 @@ public class Test {
 		logger.trace("End"); //2017/01/21 06:02:17.172 [main] TRACE  test1.Sample End
 	}
 
+	public void testStringUtil() {
+		String msg = null;
+
+		String test1 = "   abc   ";
+		String test2 = "　　　あいう　　　";
+		String test3 = null;
+		String test4 = "";
+
+		msg = "■ trim(\"" + test1 + "\") = [" + StringUtil.trim(test1) + "]";
+		logger.debug(msg);
+		msg = "■ trim(\"" + test2 + "\") = [" + StringUtil.trim(test2) + "]";
+		logger.debug(msg);
+		msg = "■ trim(\"" + test3 + "\") = [" + StringUtil.trim(test3) + "]";
+		logger.debug(msg);
+		msg = "■ trim(\"" + test4 + "\") = [" + StringUtil.trim(test4) + "]";
+		logger.debug(msg);
+
+		msg = "■ ltrim(\"" + test1 + "\") = [" + StringUtil.ltrim(test1) + "]";
+		logger.debug(msg);
+		msg = "■ ltrim(\"" + test2 + "\") = [" + StringUtil.ltrim(test2) + "]";
+		logger.debug(msg);
+		msg = "■ ltrim(\"" + test3 + "\") = [" + StringUtil.ltrim(test3) + "]";
+		logger.debug(msg);
+		msg = "■ ltrim(\"" + test4 + "\") = [" + StringUtil.ltrim(test4) + "]";
+		logger.debug(msg);
+		
+		msg = "■ rtrim(\"" + test1 + "\") = [" + StringUtil.rtrim(test1) + "]";
+		logger.debug(msg);
+		msg = "■ rtrim(\"" + test2 + "\") = [" + StringUtil.rtrim(test2) + "]";
+		logger.debug(msg);
+		msg = "■ rtrim(\"" + test3 + "\") = [" + StringUtil.rtrim(test3) + "]";
+		logger.debug(msg);
+		msg = "■ rtrim(\"" + test4 + "\") = [" + StringUtil.rtrim(test4) + "]";
+		logger.debug(msg);
+	}
+
 	public void testOracle() throws SQLException {
 		String msg;
 		// Oracle18iに接続
