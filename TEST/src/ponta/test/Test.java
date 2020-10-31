@@ -26,16 +26,19 @@ public class Test {
 		String item1 = strUtil.getItem(s1, 1, 3);
 		String item2 = strUtil.getItem(s1, 4, 5);
 		String item3 = strUtil.getItem(s1, 9, 10);
-		System.out.println("str   : " + s1);
-		System.out.println("item1 : " + item1);
-		System.out.println("item2 : " + item2);
-		System.out.println("item3 : " + item3);
+		logger.debug("■ 分割前 str   : " + s1);
+		logger.debug("■ 分割後 item1 : " + item1);
+		logger.debug("■ 分割後 item2 : " + item2);
+		logger.debug("■ 分割後 item3 : " + item3);
 	}
 
 	public void testMessageEnum() {
+		String msg;
 		for (MessageEnum msgEnum : MessageEnum.values()) {
 			if (msgEnum.name().equals("BE1221")) {
-				System.out.println(msgEnum.ordinal() + ":" + msgEnum.name() + "," + msgEnum.getValue());
+				msg = (msgEnum.ordinal() + ":" + msgEnum.name() + "," + msgEnum.getValue());
+				logger.debug("■ 分割前 str   : " + msg);
+				System.out.println(msg);
 			}
 		}
 
@@ -46,7 +49,7 @@ public class Test {
 		System.out.println(" " + pontaMsg.getMessage("BE1221", paramList));
 
 	}
-	
+
 	public void testMessage() {
         String test = MessageUtil.getMessage(Message.M0001, "test");
         System.out.println(test);
