@@ -37,8 +37,7 @@ public class Test {
 		for (MessageEnum msgEnum : MessageEnum.values()) {
 			if (msgEnum.name().equals("BE1221")) {
 				msg = (msgEnum.ordinal() + ":" + msgEnum.name() + "," + msgEnum.getValue());
-				logger.debug("■ 分割前 str   : " + msg);
-				System.out.println(msg);
+				logger.debug("■ メッセージ確認 " + msg);
 			}
 		}
 
@@ -46,14 +45,14 @@ public class Test {
 		ArrayList<String> paramList = new ArrayList<String>();
 		paramList.add("TEST1");
 		paramList.add("テスト２");
-		System.out.println(" " + pontaMsg.getMessage("BE1221", paramList));
+		msg = pontaMsg.getMessage("BE1221", paramList);
+		logger.debug("■ メッセージ確認 " + msg);
 
 	}
 
 	public void testMessage() {
         String test = MessageUtil.getMessage(Message.M0001, "test");
-        System.out.println(test);
-
+		logger.debug("■ メッセージ確認 [" + test + "]");
 	}
 
 	public void testLog() {
@@ -73,6 +72,7 @@ public class Test {
 	}
 
 	public void testOracle() throws SQLException {
+		String msg;
 		// Oracle18iに接続
 		Connection conn;
 		conn = DriverManager.getConnection("jdbc:oracle:thin:@//192.168.11.10:1521/XEPDB1", "ponta", "ponta5344");
@@ -90,7 +90,9 @@ public class Test {
 		// 問合せ結果の表示
 		while (rset.next()) {
 			String cn = rset.getString("name");
-			System.out.println("container name = " + cn);
+
+			msg = "container name = " + cn;
+			logger.debug("■ メッセージ確認 [" + msg + "]");
 
 //			// 列番号による指定
 //			System.out.println(rset.getInt(1) + "\t" + rset.getString(2));
