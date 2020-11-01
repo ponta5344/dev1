@@ -6,11 +6,10 @@ public class PontaSystemException extends RuntimeException {
 		super(message);
 	}
 
-	public PontaSystemException(String message, RuntimeException e) {
-		super(message, e);
+	public PontaSystemException(String message, Throwable cause) {
+		super(message, cause);
 	}
-
-	public PontaSystemException(String message, Exception e) {
-		super(message, e);
+	public PontaSystemException(Throwable cause) {
+		super(cause);
 	}
 }

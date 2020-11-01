@@ -1,9 +1,9 @@
 package ponta.test;
 
-import java.sql.SQLException;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import ponta.test.Exeption.PontaSystemException;
 
 /**
  * Java検証用テストクラス
@@ -46,8 +46,10 @@ public class PontaTest {
 			logger.trace("■ Oracle test start.");
 			t.testOracle();
 			logger.trace("■ Oracle test end.");
-		} catch (SQLException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			PontaSystemException pe = new PontaSystemException(e);
+			pe.printStackTrace();
+			//throw pe;
 		} finally {
 
 			System.out.println();
