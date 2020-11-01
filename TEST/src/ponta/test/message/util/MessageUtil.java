@@ -1,4 +1,4 @@
-package ponta.test.util;
+package ponta.test.message.util;
 
 import java.text.MessageFormat;
 

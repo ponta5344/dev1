@@ -12,9 +12,9 @@ import org.apache.logging.log4j.Logger;
 
 import ponta.test.message.Message;
 import ponta.test.message.MessageEnum;
-import ponta.test.util.MessageUtil;
+import ponta.test.message.util.MessageUtil;
+import ponta.test.string.util.StringUtil;
 import ponta.test.util.PontaMessage;
-import ponta.test.util.StringUtil;
 
 public class Test {
 

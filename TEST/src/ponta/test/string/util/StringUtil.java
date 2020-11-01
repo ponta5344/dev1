@@ -1,8 +1,9 @@
-package ponta.test.util;
+package ponta.test.string.util;
 
 import java.io.UnsupportedEncodingException;
 
 import ponta.test.Exeption.PontaSystemException;
+import ponta.test.util.PontaUtil;
 
 /**
  * 文字列ユーティリティクラス
