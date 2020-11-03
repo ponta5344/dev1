@@ -6,8 +6,11 @@ public class PontaExeption extends Exception {
 		super(message);
 	}
 
-	public PontaExeption(String message, Exception e) {
-		super(message, e);
+	public PontaExeption(String message, Throwable cause) {
+		super(message, cause);
 	}
 
+	public PontaExeption(Throwable cause) {
+		super(cause);
+	}
 }
