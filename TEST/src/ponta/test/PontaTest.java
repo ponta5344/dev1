@@ -40,6 +40,10 @@ public class PontaTest {
 		t.testStringUtil();
 		logger.trace("■ StringUtil test end.");
 
+		logger.trace("■ PontaUtil test start.");
+		t.testPontaUtil();
+		logger.trace("■ PontaUtil test end.");
+
 		System.out.println();
 
 		try {

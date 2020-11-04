@@ -15,6 +15,7 @@ import ponta.test.message.MessageEnum;
 import ponta.test.message.util.MessageUtil;
 import ponta.test.string.util.StringUtil;
 import ponta.test.util.PontaMessage;
+import ponta.test.util.PontaUtil;
 
 public class Test {
 
@@ -96,7 +97,7 @@ public class Test {
 		logger.debug(msg);
 		msg = "■ ltrim(\"" + test4 + "\") = [" + StringUtil.ltrim(test4) + "]";
 		logger.debug(msg);
-		
+
 		msg = "■ rtrim(\"" + test1 + "\") = [" + StringUtil.rtrim(test1) + "]";
 		logger.debug(msg);
 		msg = "■ rtrim(\"" + test2 + "\") = [" + StringUtil.rtrim(test2) + "]";
@@ -164,6 +165,31 @@ public class Test {
 		// 接続をクローズ
 		conn.close();
 
+	}
+
+	public void testPontaUtil() {
+//		PontaUtil ut = new PontaUtil();S
+		String t1 = null;
+		String t2 = "";
+		String t3 = "test";
+		String e1 = "PNTENV";
+		String e2 = "NGENV";
+		String e3 = "";
+		String e4 = null;
+
+		try {
+			logger.debug("isEmpty(" + t1 + ")=[" + PontaUtil.isEmpty(t1) + "]");
+			logger.debug("isEmpty(" + t2 + ")=[" + PontaUtil.isEmpty(t2) + "]");
+			logger.debug("isEmpty(" + t3 + ")=[" + PontaUtil.isEmpty(t3) + "]");
+
+			logger.debug("getEnv(" + e1 + ")=[" + PontaUtil.getEnv(e1) + "]");
+			logger.debug("getEnv(" + e2 + ")=[" + PontaUtil.getEnv(e2) + "]");
+			logger.debug("getEnv(" + e3 + ")=[" + PontaUtil.getEnv(e3) + "]");
+			logger.debug("getEnv(" + e4 + ")=[" + PontaUtil.getEnv(e4) + "]");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
 
