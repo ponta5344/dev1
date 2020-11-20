@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<project name="PropertySet" default="PropertySetSample">
+
+  <target name="sub">
+    <echo message="a.x=${a.x} a.y=${a.y} a.z=${a.z}"/>
+  </target>
+
+  <target name="PropertySetSample">
+    <property name="a.x" value="1"/>
+    <property name="a.y" value="2"/>
+    <property name="a.z" value="3"/>
+    <property name="b.x" value="11"/>
+    <property name="b.y" value="22"/>
+    <property name="b.z" value="33"/>
+
+    <!--従来の方法。個別に指定する必要がある-->
+    <antcall target="sub" inheritAll="false">
+      <param name="a.x" value="${a.x}"/>
+      <param name="a.y" value="${a.y}"/>
+      <param name="a.z" value="${a.z}"/>
+    </antcall>
+
+    <!--「a.」で始まる全プロパティをantcall先で参照可能にする-->
+    <antcall target="sub" inheritAll="false">
+      <propertyset>
+        <propertyref prefix="a." />
+      </propertyset>
+    </antcall>
+
+    <!--「b.」で始まる全プロパティを「a.」で始まる名前に変換し、
+         antcall先で参照可能にする-->
+    <antcall target="sub" inheritAll="false">
+      <propertyset>
+        <propertyref prefix="b" />
+        <mapper type="glob" from="b.*" to="a.*"/>
+      </propertyset>
+    </antcall>
+  </target>
+</project>
