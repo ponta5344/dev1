@@ -186,6 +186,7 @@ public class Test {
 			logger.debug("getEnv(" + e2 + ")=[" + PontaUtil.getEnv(e2) + "]");
 			logger.debug("getEnv(" + e3 + ")=[" + PontaUtil.getEnv(e3) + "]");
 			logger.debug("getEnv(" + e4 + ")=[" + PontaUtil.getEnv(e4) + "]");
+			logger.debug("System.getenv()=[" + System.getenv() + "]");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
